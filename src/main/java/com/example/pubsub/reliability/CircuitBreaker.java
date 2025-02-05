@@ -41,7 +41,9 @@ public class CircuitBreaker {
             return false;
         }
         
-        // HALF_OPEN state - allow one request to test the system
+        // HALF_OPEN state 
+        //- allow one request to test the system
+        //Circuit breaker test
         return true;
     }
     

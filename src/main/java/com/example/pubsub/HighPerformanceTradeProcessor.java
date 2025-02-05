@@ -27,7 +27,7 @@ public class HighPerformanceTradeProcessor implements AutoCloseable {
     private volatile boolean running;
     
     public HighPerformanceTradeProcessor(int bufferSize, int poolSize) {
-        // Initialize ring buffers
+        // Initialize ring buffers - Fixed comments
         this.validationBuffer = new RingBuffer(bufferSize);
         this.pricingBuffer = new RingBuffer(bufferSize);
         this.riskBuffer = new RingBuffer(bufferSize);
